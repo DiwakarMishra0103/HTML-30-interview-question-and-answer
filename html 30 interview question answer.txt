@@ -1,0 +1,613 @@
+1. What is HTML?
+The full form of HTML stands for Hypertext Markup Language and it also allows the user to create and structure sections, paragraphs, headings, links, and blockquotes for web pages and applications.
+
+2. How to insert an image in HTML?
+<img> tag is used to add an image in a web page.
+
+Images are not inserted into a web page basically they are linked to web pages. The <img> tag helps to create a holding space for the referenced image.
+
+The <img> tag is normally empty, it has attributes only, and does not have a closing tag.
+
+ <img> tag has two required parameters:
+
+src – The path to the image
+alt – An alternate text for the image
+To insert a image in html you need to use img tag:
+
+1
+2
+<img src="image path" alt="Italian Trulli">
+<img src="demo.jpg" alt="Italian Trulli">
+3. How to set background image in HTML?
+In order to add a background image on an HTML element you need to use  two things:
+
+the HTML style attribute and 
+the CSS background-image property:
+1
+<div style="background-image: url('img_boy.jpg');">
+4. How to comment in HTML?
+Normally HTML comments are not being displayed in the browser. But these comments can help to document the HTML source code.
+
+<!– Write your comments here –>
+
+5. How to give space in HTML?
+In order to add a space in the webpage, Go  where you want to add the space and then use the spacebar. Normally, HTML displays one space between words, no matter how many times you have entered  the space bar. 
+
+Now if you Type &nbsp; to force an extra space. 
+
+This is known as a non-breaking space because it helps to prevent a line break at its location.
+
+6. How to link CSS to HTML?
+Before start with how to link CSS with HTML, 
+
+Let’s have a look at: What is CSS?
+
+Full form of CSS stands for Cascading Style Sheets (CSS) which is used to format the layout of a webpage.
+
+With the help of CSS, someone can control the color, font, the size of text, the spacing between elements and also how elements are positioned and laid out, what background images or background colors to be used, different displays for different devices and screen sizes, and so many more as well.
+
+Types of CSS:
+
+So there are three ways to add CSS to HTML documents :
+
+Inline – by putting the style attribute inside HTML elements
+Internal – by putting  a <style> element in the <head> section
+External – by adding a <link> element to link to an external CSS file
+The most common and used way to add CSS, is to have the styles in external CSS files. 
+
+Inline CSS
+
+An inline CSS can be used to apply a unique and also different style to a single HTML element.
+
+An inline CSS has the style attribute of an HTML element.
+
+Now put the text color of the <h1> element to red, and the text color of the <p> element to blue:
+
+1
+2
+3
+<h1 style="color:red;">A Blue Heading</h1>
+  
+<p style="color:blue;">A red paragraph.</p>
+Internal CSS
+
+An internal CSS can be used to define a style for a single HTML page.
+
+An internal CSS is used to define in the <head> section of an HTML page and also  within a <style> element.
+
+Now let’s have an example of the text color of ALL the <h1> elements (on that page) to blue, and the text color of ALL the <p> elements to red. 
+
+The page will be displayed with “powderblue” background color:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+External CSS
+
+An external style sheet concept is normally used to define the style for many HTML pages.
+
+In order to start using an external style sheet, put a link to it in the <head> section of each HTML page:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+  
+</body>
+</html>
+  
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+  
+</body>
+</html>
+7. How to align text in HTML?
+Basically, if you want to align your text using HTML, then you need to use css and follow the proper process:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+div.a {
+  text-align: center;
+}
+  
+div.b {
+  text-align: left;
+}
+  
+div.c {
+  text-align: right;
+}
+  
+div.c {
+  text-align: justify;
+}
+The text-align property discusses the horizontal alignment of text in an element.
+
+8. How to create a table in HTML?
+HTML tables help web developers to set the data into rows and columns.
+
+The <table> tag is there in the HTML table.
+Each table row can be defined with a <tr> tag.
+Each header can be defined with a <th> tag. 
+Each data or the cell is defined with a <td> tag.
+If your text is in the  <th> elements then they will be bold and centered.
+If your text is in the <td> elements then they will be regular and left-aligned.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Hobbies</th>
+  </tr>
+  <tr>
+    <td>Ram</td>
+    <td>Kumar</td>
+    <td>Travelling</td>
+  </tr>
+  <tr>
+    <td>Shyam</td>
+    <td>Chadra</td>
+    <td>Reading books</td>
+  </tr>
+</table>
+9. How to convert HTML to PDF?
+If you are working in a Windows system then  open an HTML web page in Internet Explorer, Google Chrome or Firefox.
+
+On a Mac, open an HTML web page in Firefox
+Press on the “Convert to PDF” button in the Adobe PDF toolbar in order to get  started with the PDF conversion
+Enter the filename and save your new PDF file in a desired location
+10. How to change text color in HTML?
+The HTML style attribute is the option to add styles to an element, like: Color, Font, Size, and more.
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+<!DOCTYPE html>
+<html>
+<body>
+  
+<p>I am normal</p>
+<p style="color:red;">This is red</p>
+<p style="color:blue;">This is  blue</p>
+<p style="font-size:50px;">I am  Fat and big</p>
+  
+</body>
+</html>
+11. How to change font color in HTML?
+<font> tag, is used to specify the text color.
+
+<font Color=”Blue”>  
+<font color=”rgb(128,128,0)”
+<font color=”#00FF00″>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+<!DOCTYPE html>    
+<html>     
+<head>    
+<title>    
+ Example of color attribute   
+</title>    
+</head>    
+<body>   
+<font color="orange">   
+<!-- The color attribute of font tag sets the color name 'orange' for the word Great Learningt-->  
+<center>    
+<h1>   
+Great Learning 
+</h1>   
+</center>  
+</font>     
+</body>    
+</html>
+12. How to change background color in HTML?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;">
+  
+<h1>This is a sample 1</h1>
+<p>This is a sample 2.</p>
+  
+</body>
+</html>
+  
+    
+13. What is doctype in HTML?
+The HTML Document Type.
+
+It is a way to give  “information” to the browser about what will be the document type to expect. In HTML5, the <! DOCTYPE> declaration is simple: <! DOCTYPE html>
+
+14. How to change font style in HTML?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML Font</title>
+   </head>
+  
+   <body>
+      <h1>Our Products</h1>
+      <p style = "font-family:georgia,garamond,serif;font-size:16px;font-style:italic;">
+         This is sample doc
+      </p>
+   </body>
+  
+</html>
+15. How to add space in HTML?
+In order to add a space in the webpage, go where you want to add the space and then use the spacebar. Normally, HTML displays one space between words, no matter how many times you have entered  the space bar. Now if you Type   to force an extra space. This is known as a non-breaking space because it helps to prevent a line break at its location.
+
+16. What is dom in HTML?
+DOM stands for Document Object Model. When a web page is getting loaded that time the browser creates a Document Object Model of the page and it is constructed as a tree of Objects. HTML DOM is basically an Object Model for HTML. 
+
+HTML DOM describes:
+
+The HTML elements as objects
+Properties of all HTML elements
+Methods of all HTML elements
+Events of all HTML elements
+17. How to add image in HTML from a folder?
+Copy the image from your images folder.
+Open up the index.
+Code:  <img src=”” alt=”My test image“> is the HTML code that inserts an image into the page.
+Insert the file path into your HTML code between the double quote marks of the src=”” code.
+18. How to create form in HTML?
+1
+2
+3
+4
+5
+6
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+19. How to create button in HTML?
+1
+<button type="button">Click Here!</button>
+20. How to run HTML program?
+Step 1: Open Notepad (PC) Windows 8 or later: …
+Step 1: Open TextEdit (Mac) Open Finder > Applications > TextEdit. 
+Step 2: Write Some HTML. Write or copy the following HTML code into Notepad:
+Step 3: Save the HTML Page. Save the file on your computer. …
+Step 4: View the HTML Page in Your Browser
+21. How to save HTML file?
+In order to save html file
+
+On the main menu
+click File > Save As
+Right-click within the HTML document
+click File > Save As 
+In the Save As dialog box, specify the file name and location, then click Save
+22. How to select multiple options from a drop down list in HTML?
+1
+2
+3
+4
+5
+6
+<label for="Fruit">Choose a Fruit:</label>
+  
+<select name="Fruit" id="Fruit">
+  <option value="Mango">Mango</option>
+  <option value="Lichhi">Licchi</option>
+  </select>
+23. How to use div tag in html to divide the page?
+The div tag stands for Division tag. This is used in HTML to make divisions of content in the web page like text, images, header, footer, navigation bar, etc.  Div tag has two parts like: 
+
+open(<div>) and
+ closing (</div>) tag and it is mandatory to maintain the tag. 
+The Div is the most used tag in web page development because it has power to separate respective data in the web page and also a particular section can be created for particular data or function in the web pages.
+
+Div tag is Block level tag
+Generic container tag
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+<html>
+   <head>
+      <title>div tag demo</title>
+<style type=text/css>
+   
+p{
+  background-color:gray;
+  margin: 100px;
+}
+   
+div
+{
+  color: white;
+  background-color: 009900;
+  margin: 4px;
+  font-size: 35px;
+}
+</style>
+    
+</head>
+   
+ <body>
+   <div > div tag demo 1   </div>
+   <div > div tag  demo 2 </div>
+   <div > div tag  demo 3 </div>
+   <div > div tag  demo 4 </div>
+    
+   </body>
+</html>
+24. What is HTML used for?
+HTML is used to make static web pages and HTML stands for markup language.
+
+25. How to align text in center in HTML?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>New HTML Document</title>
+   </head>
+  
+   <body>
+      <h1>Demo</h1>
+      <p style="text-align:center;">Great Learning</p>
+   </body>
+</html>
+26. How to increase font size in HTML?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+<!DOCTYPE html>
+   <html>    
+      <head>      
+         <title>Demo HTML font size</title>    
+      </head>    
+      <body>      
+         <h1 style="color:red;font-size:40px;">Heading</h1>      
+         <p style="color:blue;font-size:18px;">Font size demo</p>    
+      </body>
+</html>
+27. How to create button in HTML?
+1
+<button type="button">Click Here!</button>
+28. How to add images in html?
+1
+<img src="img.jpg" alt="Italian Trulli">
+29. How to change button color in HTML?
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+  
+.buttondemo {background-color: #008CBA;} /* Blue */
+.buttondemo2 {background-color: #f44336;} /* Red */ 
+.buttondemo3 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.buttondemo4 {background-color: #555555;} /* Black */
+</style>
+</head>
+<body>
+  
+<h2>Button Colors</h2>
+<p>Change the background color of a button with the background-color property:</p>
+  
+<button class="button">Green</button>
+<button class="button buttondemo">Blue</button>
+<button class="button buttondemo2">Red</button>
+<button class="button buttondemo3">Gray</button>
+<button class="buttonbuttondemo4">Black</button>
+  
+</body>
+</html>
+30. What is the difference between html and html5?
+When HTML5 was released that time  the primary objective was to improve the World Wide Web experience for developers and end-users. :
+
+HTML5 supports SVG (Scalable Vector Graphics), canvas, and also  other virtual vector graphics, but in HTML, make use of vector graphics was only possible by using it in conjunction with different technologies like Flash, VML (Vector Markup Language), or Silverlight.
+Web SQL databases are normally  used in HTML5 for storing the data temporarily. In the older version of HTML we were only able to use browser cache and could be utilized for this purpose.
+In HTML5 the main advantage is  JavaScript can run within a web browser, while when we talk about the older version of  HTML only allows JavaScript to run in the browser interface thread.
+HTML5 is not based on SGML. The language has improved parsing rules which helps to provide enhanced compatibility.
